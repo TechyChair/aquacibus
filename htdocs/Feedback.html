@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title + Meta Tags -->
+		<title>Feedback</title>
+		<meta name="description" content="Page where our visitors could provide comments/suggestion for the further improvement of our website"/>
+		<meta name="keywords" content="feedback, comments, suggestions, for improvement"/>
+		<meta name="author" content="Franzesca De Leon, Benjeouelle Lazaro, Danielle Santos"/>
+		<meta name="revised" content="Franzesca De Leon, Benjeouelle Lazaro, Danielle Santos, 01/10/2020"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<!-- Icon, CSS, & Fonts -->
+		<link rel="icon" href="../pics/logoo.ico">
+		<link rel="stylesheet" href="../css/Feedback.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unica+One">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157736734-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-157736734-6');
+</script>
+	</head>	
+	<body id="gbt">
+        <!-- JS Ref -->
+        <script type="text/javascript" src="../js/Feedback.js"></script>
+        <!-- Logo -->
+        <header>
+            <a href="../index.html">
+                <img src="../pics/loogh.png" alt="Aquacibus" width="23%" height="23%">
+            </a>
+            <a href="https://twitter.com/Aquacibus1"><img src="../pics/twt.png" class="twt" title="Twitter"></a>
+            <a href="https://www.instagram.com/aquacibus_official/"><img src="../pics/insta.png" class="insta" title="Instagram"></a>
+            <a href="https://www.facebook.com/Aquacibus-100155774852924/?modal=admin_todo_tour"><img src="../pics/fb.png" class="facebook" title="Facebook"></a>
+            <p class="navd">Find Us:</p>
+        </header>
+        <!-- Navbar + Sidebar -->
+        <nav>
+            <ul>
+                <li>
+                    <button class="omenu" onclick="sbappear()">
+                        <img src="../pics/menu.png" alt="Menu" class="menu">
+                    </button>
+                </li>
+
+                <li class="links"><a href="../index.html" class="nlink">Home</a></li>
+                <li class="links"><a href="Water Crisis.html" class="nlink">Water Crisis</a></li>
+                <li class="links"><a href="Food Crisis.html" class="nlink">Food Crisis</a></li>
+                <li class="links"><a href="Donate.html" class="nlink">Donate</a></li>
+                <li class="links"><a href="Feedback.html" class="nlink">Feedback</a></li>
+                <li class="links right"><a href="About Us.html" class="nlink">About Us</a></li>
+            </ul>
+            <div id="sidebar">
+                <div>
+                    <button class="cmenu" onclick="sbclose()">
+                        <img src="../pics/close.png" alt="Close" class="close">
+                    </button>
+                </div>
+                
+                <div class="sblink tsblink">
+                    <a href="../index.html" class="sblink">Home</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="Water Crisis.html" class="sblink">Water Crisis</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="Food Crisis.html" class="sblink">Food Crisis</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="Donate.html" class="sblink">Donate</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="Feedback.html" class="sblink">Feedback</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="About Us.html" class="sblink">About Us</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="#gbt" class="sblink">Go Back to Top</a>
+                </div>
+            </div>   
+        </nav>
+        <!-- Start of Form -->
+        <div class="form">
+            <form action="feedbackresult.html" method="post" id="form">
+            <fieldset>
+            <legend class="leg">Feedback Form for Aquacibus</legend>
+                <div class="names">
+                    <h2> Personal Details (Optional) </h2>
+                    <span class="name">First Name: </span>
+                    <input type="text" name="fname" placeholder="Greta"></input>
+
+                    <span class="name">Last Name: </span>
+                    <input type="text" name="lname" placeholder="Thunberg"></input>
+
+                    <span class="name">Middle Initial: </span>
+                    <input type="text" name="minitial" placeholder="Ernman"></input>
+                </div>	
+
+                <div class="feedback">
+                    <h2> Comments/Suggestions (Required) </h2>
+                    <span class="feed">Please put your feedback regarding our website here:</span></br>
+                    <textarea  name="fback" placeholder="Any comments/suggestions are welcome! :)" id="tarea"></textarea>
+                </div>
+
+                <div class="contact">
+                    <h2> Contact Details (at least 1) </h2>
+                    <span class="con"></span>
+                    <input type="checkbox" name="socmed" id="socmed" onclick="Checkbox()">
+                        <label for="checkbox">Facebook/Twitter Name</label>
+                    </input>
+                    <input type="text" name="smacc" id="smacc" placeholder="@GretaThunder"></input>
+                    </br>
+                    <input type="checkbox" name="email" id="email" onclick="Checkbox()">
+                        <label for="checkbox">Email</label>
+                    </input>
+                    <input type="email" name="email" id="eemail" placeholder="grethunder@gmail.com"></input>
+                    </br>
+                    <input type="checkbox" name="cno" id="cno" onclick="Checkbox()">
+                        <label for="checkbox">Contact Number (for Philippines only; 09 or +639 are both valid)</label>
+                    </input>
+                    <input type="tel" name="cno" id="number" placeholder="09*********" pattern="^(09|\+639)\d{9}$"></input>
+                </div>
+                
+                <button class="button submit" onclick="return ValidateForm();">Submit</button>
+                <button class="button reset" onclick="return ResetForm();">Clear</button>
+                <div class="gform">
+                    <p>If you think our website layout is cool or if our original content is interesting, please visit <a href="https://forms.gle/UD12aHNTfs4MTn1k9" target="_blank">this link</a> and vote our website for best in design/best in content. Thank you!!</p>
+                </div>
+            </fieldset>
+            </form>
+        </div>
+	</body>
+</html>

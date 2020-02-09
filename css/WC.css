@@ -1,0 +1,619 @@
+* {
+	box-sizing: border-box;
+}
+
+/* To remove the default margins */
+body {
+    margin: 0;
+}
+
+/* For Social Media Stoof in Header */
+.navd {
+    float: right;
+    margin-top: 2.7%;
+    margin-right: 1%;
+	font-family: "Lato";
+	font-size: 17.4px;
+	color: #242929;
+}
+
+.facebook {
+	height: 42px;	
+    float: right;
+    margin-top: 1.95%;
+    margin-right: 0.5%;
+}
+
+.insta {
+	height: 28px;
+    float: right;
+    margin-top: 2.55%;
+    margin-right: 1%;
+}
+
+.twt {
+	height: 41px;	
+    float: right;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+
+/* For navbar + sidebar + logo */
+nav {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #00cccc;
+    font-family: "Lato";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 12px;
+    padding: 15px;
+    height: inherit;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.15em;
+}
+
+li.links:hover {
+    background-image: linear-gradient(to right, #74ebd5, #acb6e5);
+    border: 1.5px #003333 solid;
+}
+
+.right {
+    float: right;
+}
+
+li:hover a {
+    color: black;
+    text-decoration: underline;
+    text-shadow: 1.5px 1.5px white;
+}
+
+.nlink:hover a {
+    color: black;
+}
+
+a.nlink {
+    text-decoration: none;
+    color: white;
+}
+
+a.sblink {
+    text-decoration: none;
+    color: black;
+}
+
+div.sblink:hover  {
+    background-image: linear-gradient(to left, #aaffa9, #11ffbd);
+    border: 1.5px #f8e8e8 solid;
+}
+
+.sblink:hover a {
+    text-decoration: underline;
+    color: white;
+    text-shadow: 1.5px 1.5px #666666; 
+}
+
+.omenu {
+    background: transparent;
+    border: none;
+}
+
+.menu:hover {
+    background: #009999;
+}
+
+.cmenu {
+    background: transparent;
+    border: none;
+    margin-top: 8px;
+    position: absolute;
+    right: 0px;
+}
+
+.cmenu:hover {
+    background: #99e6e6;
+}
+
+.sblink {
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-top: 8px;
+    text-align: left;
+    vertical-align: middle;
+    font-family: "Lato";
+}
+
+#sidebar {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #ccffff;
+    display: none;
+}
+
+.menu {
+    width: 45px;
+    height: 45px;
+}
+
+.close {
+    width: 45px;
+    height: 45px;
+}
+
+/* For Article */
+
+/* Styling */
+.highlight {
+    color: #2c96cd;
+}
+
+.highlight2 {
+    color: #1678c7;
+}
+
+/* For Title & Icons */
+.tdiv {
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.title {
+    font-family: "Patua One";
+    color: #1d65a7;
+    text-shadow: 3px 2.5px #c5f088;
+    font-size: 4.75em;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.ico1 {
+    float: left;
+}
+
+.ico2 {
+    transform: scaleX(-1);
+    float: right;
+}
+
+/* Facts & Stoof */
+.pt1 {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.stitle1 {
+    font-family: "Lobster Two";
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.stitle2 {
+    font-family: "Righteous";
+    text-align: right;
+    font-size: 3em;
+}
+
+.sec1 {
+    display: inline;
+    width: 36%;
+    float: left;
+    margin-left: 5%;
+    padding-bottom: 0.75%;   
+    background: #e7eff6;
+    border: 4px outset #42ae92;
+}
+
+.sec2 {
+    display: inline;
+    width: 54%;
+    float: right;
+    margin-top: -3.75%;
+    margin-bottom: 2.5%;
+    margin-right: 5%;
+    padding-left: 3%;
+}
+
+.sec3 {
+    width: 45%;
+    float: right;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-right: 5%;
+    padding-left: 1.15%;
+    padding-right: 1.15%;
+    border: 3px outset #cadaf2;
+    background: #f8f8f8;
+}
+
+.sec4 {
+    width: 45%;
+    float: left;
+    margin-bottom: 1.5%;
+    margin-left: 5%;
+    padding-right: 5%;
+}
+
+.text1 {
+    font-family: "Fira Sans";
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.text2 {
+    font-family: "Lobster Two";
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.text3 {
+    font-family: "Fira Sans";
+    font-size: 1.2em;
+}
+
+.img1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Charities */
+.tdiv2 {
+    width: 100%;
+    float: left;
+}
+
+.stitle3 {
+    font-family: "Righteous";
+    color: #39b3e4;
+    text-shadow: 3px 2.5px #f4eba1;
+    font-size: 4em;
+    text-align: center;
+}
+
+.stitle4 {
+    float: left;
+    padding-left: 5%;
+    font-family: "Lobster Two";
+    font-size: 3em;
+}
+
+.stitle5 {
+    float: right;
+    padding-right: 5%;
+    font-family: "Lobster Two";
+    font-size: 3em;
+}
+
+.stitle6 {
+    float: left;
+    font-family: "Lobster Two";
+    font-size: 3em;
+}
+
+.sec5 {
+    width: 100%;    
+    float: left;
+    margin-bottom: 2%;
+}
+
+.sec6 {
+    width: 100%;
+    float: left;
+    margin-bottom: 2%;
+}
+
+.sec7 {
+    width: 50%;
+    margin-left: 31.5%;
+}
+
+.text4 {
+    width: 50%;
+    float: left;
+    padding-left: 5.5%;
+    font-family: "Fira Sans";   
+    font-size: 1.5em;
+}
+
+.text5 {
+    width: 50%;
+    float: right;
+    padding-right: 5%;
+    text-align: right;
+    font-family: "Fira Sans";
+    font-size: 1.5em;
+}
+
+.text6 {
+    width: 75%;
+    float: left;
+    margin-left: 12.5%;
+    font-family: "Fira Sans";
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.img3 {
+    float: left;
+    padding-top: 3.5%; 
+}
+
+.img4 {
+    float: right;
+    margin-right: 5%;
+    border: 4.5px outset #f8c092;
+}
+
+.img5 {
+    float: right;
+    margin-right: 1.5%;
+    padding-top: 3%;
+}
+
+.img6 {
+    float: left;
+    margin-left: 5%;
+    border: 4.5px inset #9fe1f7;
+}
+
+.img7 {
+    float: left;
+    padding-top: 4%;
+    padding-left: 2%;
+}
+
+.img8 {
+    margin-left: 10%;
+    margin-bottom: 3%;
+    border: 7.5px outset #91aae1;
+}
+
+/* Stories */
+
+.stitle7 {
+    font-family: "Righteous";
+    color: #686fd4;
+    text-shadow: 4px 3.5px #feecb8;
+    font-size: 4em;
+    text-align: center;
+}
+
+.stitle8 {
+    text-align: center;
+    font-family: "Lobster Two";
+    font-size: 2.5em;
+    text-shadow: 2.5px 3.5px #39b3e4;
+}
+
+.stitle9 {
+    text-align: center;
+    font-family: "Lobster Two";
+    font-size: 2.2em;
+    text-shadow: 2px 3px #f79e6a;
+}
+
+.sec8 {
+    width: 42.5%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 0.75%;
+    padding-right: 0.75%;
+}
+
+.sec9 {
+    width: 42.5%;
+    float: left;
+    margin-left: 5%;
+     padding-top: 0.7%;
+    padding-left: 0.75%;
+    padding-right: 0.75%;
+}
+
+.text7 {
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    text-align: center;
+    font-family: "Fira Sans";
+    font-size: 1.25em;
+}
+
+.text8 {
+    width: 100%;
+    margin-top: 6%;
+    text-align: center;
+    font-family: "Fira Sans";
+    font-size: 1.25em;
+}
+
+.text9 {
+    width: 100%;
+    margin-top: 5.1%;
+    text-align: center;
+    font-family: "Fira Sans";
+    font-size: 1.25em;
+}
+
+.img9 {
+    border: 4px outset #619ced;
+}
+
+.img10 {
+    border: 4px outset #f79e6a;
+}
+
+/* References */
+.tdiv4 {
+    width: 100%;
+    float: left;
+}
+
+.stitle10 {
+    text-align: center;
+    color: #506c7f;
+    font-family: "Righteous";
+    font-size: 4em;
+    text-shadow: 3.5px 3px #ffe424;
+}
+
+.sec10 {
+    width: 90%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ref {
+    font-family: "Fira Sans";
+    font-size: 1.15em;
+}
+
+.addpad {
+    padding-left: 1%;
+}
+
+.link {
+    margin-bottom: 3%;
+    padding-left: 1%;
+    font-family: "Fira Sans";
+    font-size: 1.15em;
+}
+
+.icolink {
+    margin-bottom: 3%;
+    font-family: "Fira Sans";
+    font-size: 1.15em;
+}
+
+/* Media Query for 600px */
+@media screen and (max-width: 600px) {
+    /* Social Media Stoof in Header */
+    p.navd {
+        margin-top: 2.35%;
+        font-size: 10.4px;
+    }
+    
+    img.facebook {
+        margin-top: 0.65%;
+        height: 30px;
+    }
+    
+    img.insta {
+        margin-top: 1.75%;
+        height: 20px;
+    }
+    
+    img.twt {
+        margin-top: 0.8%;
+        height: 30px;
+    }
+    
+    /* Sidebar */
+    div.sblink {
+        height: 25px;
+        padding-top: 3.5px;
+        padding-left: 1px;
+        font-size: 0.5em;
+    }
+    
+    div.sblink:hover a {
+        text-shadow: 0.75px 0.75px #666666;
+    }
+    
+    img.close {
+        width: 20px;
+        height: 20px;
+    }
+    
+    button.cmenu {
+        margin-top: 3px;
+        padding-top: 3px;
+    }
+    /* Navbar */
+    img.menu {
+        width: 20px; 
+        height: 20px;
+        margin-top: 3px;
+    }
+    
+    li {
+        font-size: 0.5em;
+        margin-right: 6px;
+        padding: 7.5px;
+    }
+    
+    /* Article Bit */
+    div.tdiv {
+        width: 60%;
+    }
+    
+    h1.title {
+        font-size: 2.25em;
+        text-shadow: 2.5px 2px #c5f088;
+        letter-spacing: 1.5px;
+    }
+    
+    h2.stitle1 {
+        font-size: 1.25em;
+    }
+    
+    h2.stitle2 {
+        font-size: 1.5em;
+    }
+    
+    p.text1 {
+        font-size: 0.55em;
+    }
+    
+    p.text3 {
+        font-size: 0.52em;
+    }
+    
+    p.text2, p.text4, p.text5 {
+        font-size: 0.6em;
+    }
+    
+    h2.stitle3, h2.stitle7, h2.stitle10 {
+        font-size: 1.75em;
+    }
+    
+    span.addpad2 {
+        padding-left: 1%;
+    }
+    
+    p.text6, p.text7, p.text8, p.text9, p.ref, a.link {
+        font-size: 0.55em;
+    }
+    
+    h2.stitle4, h2.stitle5, h2.stitle6 {
+        font-size: 1.15em;
+    }
+    
+    /* Stories */
+    h2.stitle8 {
+        font-size: 1.5em;
+        text-shadow: 1px 2px #39b3e4;
+    }
+    
+    h2.stitle9 {
+        font-size: 1.55em;
+        text-shadow: 1px 2px #f79e6a;
+    }
+}
+
