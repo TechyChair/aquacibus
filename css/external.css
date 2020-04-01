@@ -73,17 +73,20 @@ div.sblink:hover  {
 .sblink:hover a {
     text-decoration: underline;
     color: white;
-    text-shadow: 1.5px 1.5px #666666; 
+    text-shadow: 1.5px 1.5px #666666;
     transition: all 0.25s ease;
 }
 
-.menu {
+.omenu {
     background: transparent;
     border: none;
 }
 
-.menu:hover {
+.omenu:hover {
     background: #009999;
+    border-radius: 45px;
+    box-shadow: 2.5px 2.5px grey;
+    transition: all 0.25s ease;
 }
 
 .cmenu {
@@ -96,6 +99,9 @@ div.sblink:hover  {
 
 .cmenu:hover {
     background: #99e6e6;
+    border-radius: 45px;
+    box-shadow: 2.5px 2.5px grey;
+    transition: all 0.25s ease;
 }
 
 .sblink {
