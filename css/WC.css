@@ -5,7 +5,7 @@
 /* To remove the default margins */
 body {
     margin: 0;
-    transition: all 0.25s ease;
+    transition: all 0.5s ease;
 }
 
 /* For Social Media Stoof in Header */
