@@ -1,0 +1,442 @@
+/* To remove the default margins of body */
+body {
+    margin: 0;
+}
+
+/* For Social Media Stoof in Header */
+.navd {
+    float: right;
+    margin-top: 2.25%;
+    margin-right: 1%;
+	font-family: "Lato";
+	font-size: 17.4px;
+	color: #242929;
+}
+
+.facebook {
+	height: 42px;	
+    float: right;
+    margin-top: 1.5%;
+    margin-right: 0.5%;
+}
+
+.insta {
+	height: 28px;
+    float: right;
+    margin-top: 2.1%;
+    margin-right: 1%;
+}
+
+.twt {
+	height: 41px;	
+    float: right;
+    margin-top: 1.55%;
+    margin-right: 3%;
+}
+
+/* For navbar + sidebar + logo */
+nav {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #00cccc;
+    font-family: "Lato";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 12px;
+    padding: 15px;
+    height: inherit;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.15em;
+}
+
+li.links:hover {
+    transition: all 0.25s ease;
+    background-image: linear-gradient(to right, #74ebd5, #acb6e5);
+    border: 1.5px #003333 solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
+}
+
+.right {
+    float: right;
+}
+
+li:hover a {
+    transition: all 0.25s ease;
+    color: black;
+    text-decoration: underline;
+    text-shadow: 1.5px 1.5px white;
+}
+
+.nlink:hover a {
+    color: black;
+}
+
+a.nlink {
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+}
+
+a.sblink {
+    text-decoration: none;
+    color: black;
+}
+
+div.sblink:hover  {
+    background-image: linear-gradient(to left, #aaffa9, #11ffbd);
+    border: 1.5px #f8e8e8 solid;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+
+.sblink:hover a {
+    text-decoration: underline;
+    color: white;
+    text-shadow: 1.5px 1.5px #666666; 
+    transition: all 0.25s ease;
+}
+
+.omenu {
+    background: transparent;
+    border: none;
+}
+
+.menu:hover {
+    background: #009999;
+    border-radius: 45px;
+    box-shadow: 2.5px 2.5px grey;
+    transition: all 0.25s ease;
+}
+
+.cmenu {
+    background: transparent;
+    border: none;
+    margin-top: 8px;
+    position: absolute;
+    right: 0px;
+}
+
+.cmenu:hover {
+    background: #99e6e6;
+    border-radius: 45px;
+    box-shadow: 2.5px 2.5px grey;
+    transition: all 0.25s ease;
+}
+
+.sblink {
+    height: 5.5%;
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-top: 8px;
+    text-align: left;
+    vertical-align: middle;
+    font-family: "Lato";
+}
+
+#sidebar {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #ccffff;
+    display: none;
+}
+
+.close {
+    width: 45px;
+    height: 45px;
+}
+
+.menu {
+    width: 45px;
+    height: 45px;
+}
+
+/* For Form */
+
+/* Form in general */
+.form {
+    display: table;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#form {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 15px;
+}
+
+/* Labels of Each Part of Da Form */
+.name {
+	font-family: "Poppins";
+    font-size: 1.15em;
+}
+
+.feed {
+	font-family: "Poppins";
+    font-size: 1.15em;
+}
+
+/* Parts of Da Form */
+.names {
+	background: #66ccff;
+	border: 2px #3366cc solid;
+	padding-bottom: 15px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 99%;
+}
+
+.feedback {
+	background: #66ff66;
+	border: 2px #006600 solid;
+	padding-bottom: 15px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 99%;
+}
+
+.contact {
+	background: #ff9999;
+	border: 2px #cc0000 solid;
+	padding-bottom: 15px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 99%;
+}
+
+/* Various Labels & Input Chuchu */
+.leg {
+	font-family: "Patua One";
+	text-shadow: 3px 3px #ffff99;
+	font-size: 2.5em;
+}
+
+#smacc {
+	display: none;
+}
+
+#eemail {
+	display: none;
+}
+
+#number {
+	display: none;
+}
+
+label {
+	font-family: "Poppins";
+    font-size: 1.15em;
+}
+
+textarea {
+	font-family: "Comfortaa";
+    width: 85%;
+    height: 150px;
+    resize: none;
+}
+
+input {
+    padding-top: 3.5px;
+    width: auto;
+    height: 20px;
+    font-family: "Comfortaa";
+}
+
+input[type=email] {
+    width: 170px;
+}
+
+h2 {
+	font-family: "Unica One";
+	color: white;
+	font-weight: bold;
+	line-height: 65%;
+	text-shadow: 1.5px 1.5px black;
+    font-size: 1.8em;
+}
+
+/* Focus & Placeholder Styling */
+::placeholder {
+    color: #666666;
+    font-size: 1.25em;
+}
+
+div.names input:focus {
+    background: #b3daff;
+    border-radius: 4px;
+    color: black;
+}
+
+div.feedback textarea:focus {
+    background: #99ffcc;
+    border-radius: 4px;
+    color: black;
+}
+
+div.contact input:focus {
+    background: #ffe6f0; 
+    border-radius: 4px;
+    color: black;
+}
+
+/* Button Styling */
+.button {
+    font-family: "Unica One";
+    font-size: 1.25em;
+    background: transparent;
+    border: 2px black inset;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    transition: all 0.4s ease 0s;
+}
+
+.submit:hover {
+    color: white;
+    background: #2eb82e;
+    border: 2px #2eb82e inset;
+    border-radius: 50px;
+}
+
+.reset:hover {
+    color: white;
+    background: #e60000;
+    border: 2px #e60000 inset;
+    border-radius: 50px;
+}
+
+/* Link to GForms */
+.gform {
+    background: linear-gradient(to right, #51e1f9, #f6ee7a);
+    font-family: "Comfortaa";
+    font-size: 1.5em;
+    padding: 1.5%;
+}
+
+/* Media Query  for 600px */
+
+@media screen and (max-width: 600px) {
+   /* Media Query for 600px */
+    p.navd {
+        margin-top: 2.35%;
+        font-size: 10.4px;
+    }
+    
+    img.facebook {
+        margin-top: 0.65%;
+        height: 30px;
+    }
+    
+    img.insta {
+        margin-top: 1.75%;
+        height: 20px;
+    }
+    
+    img.twt {
+        margin-top: 0.8%;
+        height: 30px;
+    }
+    
+    /* Sidebar */
+    div.sblink {
+        height: 18px;
+        padding-top: 3.25px;
+        padding-left: 2.5px;
+        font-size: 0.5em;
+    }
+    
+    div.sblink:hover a {
+        text-shadow: 0.75px 0.75px #666666;
+    }
+    
+    img.close {
+        width: 20px;
+        height: 20px;
+    }
+    
+    button.cmenu {
+        margin-top: 3px;
+        padding-top: 3px;
+    }
+    
+    /* Navbar */
+    img.menu {
+        width: 20px; 
+        height: 20px;
+        margin-top: 3px;
+    }
+    
+    li {
+        font-size: 0.5em;
+        margin-right: 6px;
+        padding: 7.5px;
+    }
+
+    /* Form */
+    
+    span.name {
+        display: table;
+        padding-left: 35.5%;
+    }
+    
+    legend.leg {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.25em;
+    }
+    
+    span.name, span.feed {
+        font-size: 0.75em;
+    }
+    
+    label {
+        font-size: 0.75em;
+    }
+    
+    button.button {
+        font-size: 0.75em;
+        padding: 3.5px;
+        border: 1px inset black;
+    }
+    
+    button.submit:hover {
+        border: 1px inset #2eb82e;
+    }
+    
+    button.reset:hover {
+        border: 1px inset #e60000;
+    }
+    
+    input {
+        height: 10px;
+    }
+    
+    ::placeholder {
+        font-size: 1em;
+    }
+}
+
