@@ -29,17 +29,20 @@ li {
 }
 
 li.links:hover {
+    transition: all 0.25s ease;
     background-image: linear-gradient(to right, #74ebd5, #acb6e5);
     border: 1.5px #003333 solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
 }
 
 .right {
     float: right;  
-    margin-top: -7.8px;
-    margin-right: 38px;  
+    margin-top: -7.8px; 
 }
 
 li:hover a {
+    transition: all 0.25s ease;
     color: black;
     text-decoration: underline;
     text-shadow: 1.5px 1.5px white;
@@ -63,6 +66,8 @@ a.sblink {
 div.sblink:hover  {
     background-image: linear-gradient(to left, #aaffa9, #11ffbd);
     border: 1.5px #f8e8e8 solid;
+    border-radius: 20px;
+    transition: all 0.25s ease;
 }
 
 .sblink:hover a {
