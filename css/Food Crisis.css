@@ -638,3 +638,28 @@ h1.title {
     }
 }
 
+/* Bottom */
+.bottom {
+    width: 100%;
+    margin-top: 5%;
+    float: left;
+	background-color: #c5d4d9;
+    padding-bottom: 3%;
+}
+
+.titlebottom {
+	font-family: "Garamond";
+	font-size: 46px;
+	font-weight: bold;
+	color: white;	
+	text-align: center;
+	padding-top: 20px;
+}
+
+.copyright {
+	font-family: "Trebuchet MS";
+	font-family: 16px;
+	color: white;
+	text-align: center;
+}
+

@@ -1,0 +1,457 @@
+/* Box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* To remove default margins */
+body {
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+/* For Social Media Stoof in Header */
+.navd {
+    float: right;
+    margin-top: 2.7%;
+    margin-right: 1%;
+	font-family: "Lato";
+	font-size: 17.4px;
+	color: #242929;
+}
+
+.facebook {
+	height: 42px;	
+    float: right;
+    margin-top: 1.95%;
+    margin-right: 0.5%;
+}
+
+.insta {
+	height: 28px;
+    float: right;
+    margin-top: 2.55%;
+    margin-right: 1%;
+}
+
+.twt {
+	height: 41px;	
+    float: right;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+
+/* For navbar + sidebar + logo */
+nav {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #00cccc;
+    font-family: "Lato";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 12px;
+    padding: 15px;
+    height: inherit;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.15em;
+}
+
+li.links:hover {
+    transition: all 0.25s ease;
+    background-image: linear-gradient(to right, #74ebd5, #acb6e5);
+    border: 1.5px #003333 solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
+}
+
+.right {
+    float: right;
+}
+
+li:hover a {
+    transition: all 0.25s ease;
+    color: black;
+    text-decoration: underline;
+    text-shadow: 1.5px 1.5px white;
+}
+
+.nlink:hover a {
+    color: black;
+}
+
+a.nlink {
+    text-decoration: none;
+    color: white;
+}
+
+a.sblink {
+    text-decoration: none;
+    color: black;
+}
+
+div.sblink:hover  {
+    background-image: linear-gradient(to left, #aaffa9, #11ffbd);
+    border: 1.5px #f8e8e8 solid;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+
+.sblink:hover a {
+    text-decoration: underline;
+    color: white;
+    text-shadow: 1.5px 1.5px #666666; 
+    transition: all 0.25s ease;
+}
+
+.omenu {
+    background: transparent;
+    border: none;
+}
+
+.omenu:hover {
+    background: #009999;
+    border-radius: 45px;
+    box-shadow: 2.5px 2.5px grey;
+    transition: all 0.25s ease;
+}
+
+.omenu:active {
+    transition: all 0.05s ease;
+    box-shadow: 0.5px 0.5px 3px 3px #165050 inset;
+}
+
+.cmenu {
+    background: transparent;
+    border: none;
+    margin-top: 8px;
+    position: absolute;
+    right: 0px;
+}
+
+.cmenu:hover {
+    background: #99e6e6;
+    border-radius: 45px;
+    box-shadow: 2.5px 2.5px grey;
+    transition: all 0.25s ease;
+}
+
+.cmenu:active {
+    transition: all 0.05s ease;
+    box-shadow: 0.5px 0.5px 3px 3px #08c1c4 inset;
+}
+
+.sblink {
+    height: 7%;
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-top: 8px;
+    text-align: left;
+    vertical-align: middle;
+    font-family: "Lato";
+}
+
+#sidebar {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #ccffff;
+    display: none;
+}
+
+.close {
+    width: 45px;
+    height: 45px;
+}
+
+.menu {
+    width: 45px;
+    height: 45px;
+}
+
+/* Instructions */
+h2.instru {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-family: "Righteous";
+    font-size: 1.8em;
+    color: #0b2833;
+}
+
+p.instru {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    font-family: "Comfortaa";
+    font-size: 1.15em;
+    text-align: justify;
+}
+
+/* Actual Crossword */
+table.cw {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    width: 95%;
+    empty-cells: show;
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+    width: 4.16%;
+    font-family: "Comfortaa";
+    font-size: 1.15em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+tr {
+    height: 50px;
+    overflow: hidden;
+}
+
+.out {
+    background: #0b2833;
+}
+
+.w {
+    background: #84cdca;
+}
+
+.f {
+    background: #fde267;
+}
+
+.g {
+    background: #c1d899;
+}
+
+.wg {
+    background: #a3d3b2;
+}
+
+.label {
+    font-size: 0.75em;
+    font-family: "Comfortaa";
+    padding-top: 70%;
+    text-align: left;
+}
+
+/* Clues */
+div.hori {
+    width: 48%;
+    margin-left: 3.5%;
+    margin-bottom: 2.5%;
+    float: left;
+}
+
+h3.hori {
+    font-family: "Bellota";
+    font-size: 1.5em;
+}
+
+li.hori {
+    display: list-item;
+    list-style-type: decimal;
+    text-align: left;
+    font-family: "Baloo Paaji 2";
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+div.verti {
+    width: 47%;
+    margin-left: 0.5%;
+    margin-bottom: 2.5%;
+    float: left;
+}
+
+h3.verti {
+    font-family: "Bellota";
+    font-size: 1.5em;
+}
+
+ol.verti {
+    margin-left: 2.5%;
+}
+
+li.verti {
+    display: list-item;
+    list-style-type: decimal;
+    text-align: left;
+    font-family: "Baloo Paaji 2";
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+/* Answers */
+li.cl {
+    display: list-item;
+    list-style-type: circle;
+    text-align: left;
+    font-family: "Righteous";
+    font-size: 1.5em;
+}
+
+div.cl1 {
+    float: left;
+    width: 15%;
+    margin-left: 7.5%;
+}
+
+div.cl2 {
+    float: left;
+    width: 15%;
+    margin-left: 5%;
+    margin-bottom: 2.5%;
+}
+
+div.answer {
+    float: left;
+    width: 50%;
+    margin-left: 7.5%;
+    padding-top: 6%;
+    margin-bottom: 2.5%;
+}
+
+select {
+    margin-left: -5%;
+    margin-right: 4%;
+    background: #fce266;
+    font-family: "Unica One";
+    font-size: 1.15em;
+    height: 5.75%;
+    border: 2.5px outset #f8ffae;
+}
+
+select:hover {
+    transition: 0.25s;
+    box-shadow: 4.5px 4.5px 2px #c2c2d6;
+}
+
+input {
+    height: 5%;
+    margin-right: 4%;
+    font-family: "Comfortaa";
+    font-size: 1em;
+    transition: all 0.25s ease;
+}
+
+input:focus {
+    background: #6bf2ca;
+}
+
+button.ver {
+    font-family: "Unica One";
+    font-size: 1.15em;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid black;
+    transition: all 0.25s ease;
+}
+
+button.ver:hover {
+    background: #33cc33;
+    border-radius: 25px;
+    border: 2px outset #2eb82e;
+    color: white;
+}
+
+button.ver:active {
+    transition: all ease 0.1s;
+    box-shadow: 5px 5px grey;
+    text-shadow: 2px 2px grey;
+}
+
+p.exp {
+    width: 75%;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-size: 1.15em;
+}
+
+.green {
+    color: #33cc33;
+}
+
+/* Congratulations Message */
+div.win {
+    display: none;
+    position: fixed;
+    top: 35%;
+    bottom: 35%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    background-image: linear-gradient(to right, #a1ffce, #faffd1);
+    float: left;
+    padding: 2.5%;
+    border: 5px outset #a974dc;
+}
+
+h2.win {
+    font-family: "Luckiest Guy";
+}
+
+p.win {
+    font-family: "Comfortaa";
+}
+
+button.win {
+    height: 16%;
+    background: transparent;
+    position: absolute;
+    top: 2.5%;
+    right: 1%;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.15em;
+    background: #ff6666;
+    color: white;
+    text-shadow: 1.5px 1.5px grey;
+}
+
+button.win:active {
+    transition: all 0.05s ease;
+    box-shadow: 2px 2px grey;
+    background: #ff4d4d;
+}
+
+/* Bottom */
+.bottom {
+    width: 100%;
+    float: left;
+	background-color: #c5d4d9;
+    padding-bottom: 3%;
+}
+
+.titlebottom {
+	font-family: "Garamond";
+	font-size: 46px;
+	font-weight: bold;
+	color: white;	
+	text-align: center;
+	padding-top: 20px;
+}
+
+.copyright {
+	font-family: "Trebuchet MS";
+	font-family: 16px;
+	color: white;
+	text-align: center;
+}

@@ -38,8 +38,9 @@ li.links:hover {
 }
 
 .right {
-    float: right;  
-    margin-top: -7.8px; 
+    float: right; 
+    padding: 13px;
+    margin-top: -0.4%;
 }
 
 li:hover a {
@@ -74,7 +75,7 @@ div.sblink:hover  {
 .sblink:hover a {
     text-decoration: underline;
     color: white;
-    text-shadow: 1.5px 1.5px #666666;
+    text-shadow: 1.5px 1.5px #666666; 
     transition: all 0.25s ease;
 }
 
@@ -88,6 +89,11 @@ div.sblink:hover  {
     border-radius: 45px;
     box-shadow: 2.5px 2.5px grey;
     transition: all 0.25s ease;
+}
+
+.omenu:active {
+    transition: all 0.05s ease;
+    box-shadow: 0.5px 0.5px 3px 3px #165050 inset;
 }
 
 .cmenu {
@@ -105,8 +111,13 @@ div.sblink:hover  {
     transition: all 0.25s ease;
 }
 
+.cmenu:active {
+    transition: all 0.05s ease;
+    box-shadow: 0.5px 0.5px 3px 3px #08c1c4 inset;
+}
+
 .sblink {
-    height: 8%;
+    height: 7%;
     padding-top: 10px;
     padding-left: 5px;
     margin-top: 8px;
@@ -116,7 +127,6 @@ div.sblink:hover  {
 }
 
 #sidebar {
-    transition: margin-left .5s;
     width: 15%;
     height: 100%;
     position: fixed;
@@ -124,8 +134,8 @@ div.sblink:hover  {
     top: 0px;
     background: #ccffff;
     display: none;
-    z-index: 3;
 }
+
 /* Danni's Content */
 .slides {
 	padding-top: 830px;
@@ -397,9 +407,10 @@ div.sblink:hover  {
 
 .bottom {
     width: 100%;
+    margin-top: 7.5%;
     float: left;
-    margin-top: 5%;
 	background-color: #c5d4d9;
+	padding-top: 2%;
     padding-bottom: 3%;
 }
 
@@ -766,3 +777,399 @@ div.sblink:hover  {
 	margin-left: 205px;
 }
 
+/* Quiz CSS */
+
+.cup {
+	position: absolute;
+	top: 56%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	width: 190px;
+	height: 340px;
+	border: 5px solid white;
+	border-top: 2px solid transparent;
+	border-radius: 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: url(../pics/wave.png);
+	background-position: 0px 350px;
+	background-repeat: repeat-x;
+	animation: filling 10s ease-in-out infinite;
+	box-shadow: 0 0 0 4px black, 0 0 0 rgba(0,0,0,1);
+}
+
+@keyframes filling {
+	50% {background-position: 3000px 0px;}
+	100% {background-position: 6000px 350px;}
+}
+
+.emptycup {
+	position: absolute;
+	top: 56%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	width: 190px;
+	height: 340px;
+	border: 5px solid white;
+	border-top: 2px solid transparent;
+	border-radius: 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: 0 0 0 4px black, 0 0 0 rgba(0,0,0,1);
+	display: none;
+}
+
+.cupone {
+	position: absolute;
+	top: 56%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	width: 190px;
+	height: 340px;
+	border: 5px solid white;
+	border-top: 2px solid transparent;
+	border-radius: 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: url(../pics/watercup.png);
+	background-position: 0px 350px;
+	background-repeat: repeat-x;
+	animation: fillingonethird 3s;
+	animation-fill-mode: forwards;  
+	box-shadow: 0 0 0 4px black, 0 0 0 rgba(0,0,0,1);
+	display: none;
+}
+
+@keyframes fillingonethird {
+	from {background-position: 3000px 350px;}
+	to {background-position: 3000px 240px;}
+}
+
+.cuptwo {
+	position: absolute;
+	top: 56%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	width: 190px;
+	height: 340px;
+	border: 5px solid white;
+	border-top: 2px solid transparent;
+	border-radius: 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: url(../pics/watercup.png);
+	background-position: 3000px 240px;
+	background-repeat: repeat-x;
+	animation: fillingtwothirds 3s;
+	animation-fill-mode: forwards;  
+	box-shadow: 0 0 0 4px black, 0 0 0 rgba(0,0,0,1);
+	display: none;
+}
+
+@keyframes fillingtwothirds {
+	from {background-position: 3000px 240px;}
+	to {background-position: 3000px 125px;}
+}
+
+.cupthree {
+	position: absolute;
+	top: 56%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	width: 190px;
+	height: 340px;
+	border: 5px solid white;
+	border-top: 2px solid transparent;
+	border-radius: 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: url(../pics/watercup.png);
+	background-position: 3000px 125px;
+	background-repeat: repeat-x;
+	animation: fillingfull 3s;
+	animation-fill-mode: forwards;  
+	box-shadow: 0 0 0 4px black, 0 0 0 rgba(0,0,0,1);
+	display: none;
+}
+
+@keyframes fillingfull {
+	from {background-position: 3000px 125px;}
+	to {background-position: 3000px 5px;}
+}
+
+.plate {
+	height: 190px;
+	position: absolute;
+	top: 70%;
+	left: 20%;
+}
+
+.saladfull {
+	width: 50%;
+	position: absolute;
+	top: 47%;
+	left: 19%;
+}
+
+.saladone {
+	width: 50%;
+	position: absolute;
+	top: 69%;
+	left: 19%;
+	display: none;
+}
+
+.saladtwo {
+	width: 50%;
+	position: absolute;
+	top: 46%;
+	left: 19%;
+	display: none;
+}
+
+.saladthree {
+	width: 50%;
+	position: absolute;
+	top: 46%;
+	left: 19%;
+	display: none;
+}
+
+.quiz {
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 40%;
+}
+
+.introquiz {
+	font-family: 'Trebuchet MS';
+	font-weight: bold;
+	font-size: 47px;
+}
+
+.desquiz {
+	font-family: 'Trebuchet MS';
+	font-size: 22px; 
+}
+
+.startbutton {
+	border-radius: 4px;
+	background-color: #38AECC;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.startbutton span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.startbutton span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.startbutton:hover span {
+	padding-right: 25px;
+}
+
+.startbutton:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.quizDetail {
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 1.8%;
+	margin-bottom: 3%;
+	display: none;
+	padding: 10px;
+	border-radius: 15px;
+	margin-top: 40%;
+}
+
+.questionDetail {
+	font-size: 32px;
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 16px;
+	margin-left: 15px;
+	margin-right: 15px;
+	background-color: #38AECC;
+	border-radius: 7px;
+	padding: 23px 15px 23px 15px;
+}
+
+.choicesDetail {
+	font-family: 'Trebuchet MS';
+	font-size: 18px;
+	background-color: white;
+	border: 0.9px solid grey;
+	border-radius: 15px;
+	margin-left: 70px;
+	margin-right: 70px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #38AECC;
+}
+
+.buttonQues {
+	position: absolute;
+	left: 45%;
+	display: none;
+	border-radius: 5px;
+	background-color: #EFCA08;
+	border: none;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 140px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.buttonQues span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.buttonQues span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.buttonQues:hover span {
+	padding-right: 25px;
+}
+
+.buttonQues:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.buttonResults {
+	position: absolute;
+	left: 45%;
+	display: none;
+	border-radius: 5px;
+	background-color: #38AECC;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.buttonResults span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.buttonResults span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.buttonResults:hover span {
+	padding-right: 25px;
+}
+
+.buttonResults:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.resultsintro {
+	font-size: 26px;
+}
+
+.resultsdeets {
+	font-size: 37px;
+	color: #38AECC;
+	font-weight: bold;
+}
+
+.buttonRestart {
+	position: absolute;
+	left: 43%;
+	display: none;
+	border-radius: 5px;
+	background-color: #EFCA08;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 26px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	text-align: center;
+}
+
+.buttonRestart span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.buttonRestart span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.buttonRestart:hover span {
+	padding-right: 25px;
+}
+
+.buttonRestart:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.buttomquiz {
+	background-color: #c5d4d9;
+	padding-bottom: 28px;
+}
