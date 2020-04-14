@@ -90,6 +90,11 @@ div.sblink:hover  {
     transition: all 0.25s ease;
 }
 
+.omenu:active {
+    transition: all 0.05s ease;
+    box-shadow: 0.5px 0.5px 3px 3px #165050 inset;
+}
+
 .cmenu {
     background: transparent;
     border: none;
@@ -103,6 +108,11 @@ div.sblink:hover  {
     border-radius: 45px;
     box-shadow: 2.5px 2.5px grey;
     transition: all 0.25s ease;
+}
+
+.cmenu:active {
+    transition: all 0.05s ease;
+    box-shadow: 0.5px 0.5px 3px 3px #08c1c4 inset;
 }
 
 .sblink {
