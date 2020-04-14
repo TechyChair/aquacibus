@@ -1,0 +1,525 @@
+<html>
+<head>
+    <!-- Title & Meta Tags -->
+        <title>Crossword</title>
+        <meta name="description" content="A fun, little crossword where our visitors could test out their knowledge about the food and water crisis based on what they learned from our website."/>
+		<meta name="keywords" content="crossword, test, learn, knowledge, food & water crisis"/>
+		<meta name="author" content="Franzesca De Leon, Benjeouelle Lazaro, Danielle Santos"/>
+		<meta name="revised" content="Franzesca De Leon, Benjeouelle Lazaro, Danielle Santos, 03/19/2020"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Icon, CSS, & Fonts -->
+        <link rel="icon" href="../pics/logoo.ico">
+		<link rel="stylesheet" href="../css/Crossword.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellota">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unica+One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy">
+        <!-- JS Script Ref -->
+        <script src="../js/Crossword.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157736734-6"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-157736734-6');
+        </script>
+</head>
+<body id="gbt">
+    <!-- Logo -->
+        <header>
+            <a href="../index.html">
+                <img src="../pics/loogh.png" alt="Aquacibus" width="23%">
+            </a>
+            <a href="https://twitter.com/Aquacibus1"><img src="../pics/twt.png" class="twt" title="Twitter"></a>
+            <a href="https://www.instagram.com/aquacibus_official/"><img src="../pics/insta.png" class="insta" title="Instagram"></a>
+            <a href="https://www.facebook.com/Aquacibus-100155774852924/?modal=admin_todo_tour"><img src="../pics/fb.png" class="facebook" title="Facebook"></a>
+            <p class="navd">Find Us:</p>
+        </header>
+        <!-- Navbar + Sidebar -->
+        <nav>
+            <ul>
+                <li>
+                    <button class="omenu" onclick="sbappear()">
+                        <img src="../pics/menu.png" alt="Menu" width="45px" height="45px">
+                    </button>
+                </li>
+
+                <li class="links"><a href="../index.html" class="nlink">Home</a></li>
+                <li class="links"><a href="../htdocs/Water Crisis.html" class="nlink">Water Crisis</a></li>
+                <li class="links"><a href="../htdocs/Food Crisis.html" class="nlink">Food Crisis</a></li>
+                <li class="links"><a href="../htdocs/Crossword.html" class="nlink">Crossword</a></li>
+                <li class="links"><a href="../htdocs/Quiz.html" class="nlink">Quiz</a></li>
+                <li class="links"><a href="../htdocs/Donate.html" class="nlink">Donate</a></li>
+                <li class="links"><a href="../htdocs/Feedback.html" class="nlink">Feedback</a></li>
+                <li class="links right"><a href="../htdocs/About Us.html" class="nlink">About Us</a></li>
+            </ul>
+            <div id="sidebar">
+                <div>
+                    <button class="cmenu" onclick="sbclose()">
+                        <img src="../pics/close.png" alt="Close" width="45px" height="45px">
+                    </button>
+                </div>
+                
+                <div class="sblink tsblink">
+                    <a href="../index.html" class="sblink">Home</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Water Crisis.html" class="sblink">Water Crisis</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Food Crisis.html" class="sblink">Food Crisis</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Crossword.html" class="sblink">Crossword</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Quiz.html" class="sblink">Quiz</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Donate.html" class="sblink">Donate</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Feedback.html" class="sblink">Feedback</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/About Us.html" class="sblink">About Us</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="#gbt" class="sblink">Go Back to Top</a>
+                </div>
+            </div>   
+        </nav>
+    <!-- Instructions -->
+    <h2 class="instru">Instructions:</h2>
+    <p class="instru">Select the clue which you want to input your answer for. Please write your answer in small letters only. Put symbols if needed but DO NOT use spaces even if they are separate words. Press the verify to submit your answer. A message will appear accordingly depending on whether your answer is correct or not. Your answer will also appear in the crossword if it is correct.</p>
+    <!-- Actual Crossword -->
+    <table class="cw" id="cw">
+        <tr >
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"><div class="label">2D</div></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"><div class="label">3D</div></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+        </tr>
+        
+        <tr >
+            <td class="out"></td>
+            <td class="w"><div class="label">1A</div></td>
+            <td class="g"><div class="label">1D</div></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="wg"><div class="label">5D</div></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+        </tr>
+        
+        <tr >
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"><div class="label">2A</div></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="g"><div class="label">4D</div></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="g"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+        </tr>
+        
+        <tr >
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="g"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+        </tr>
+        
+        <tr >
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"><div class="label">4A</div></td>
+            <td class="w"></td>
+            <td class="wg"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+        </tr>
+        
+        <tr >
+            <td class="f"><div class="label">3A</div></td>
+            <td class="f"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="g"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+        </tr>
+        
+        <tr >
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="g"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+        </tr>
+        
+        <tr >
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="g"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+        </tr>
+        
+        <tr >
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="g"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="w"><div class="label">5A</div></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+            <td class="w"></td>
+        </tr>
+        
+        <tr >
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="f"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="g"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+            <td class="out"></td>
+        </tr>
+    </table>
+    
+    <!-- Clues -->
+    <div class="hori">
+        <h3 class="hori">Across Clues</h3>
+        <ol class="hori">
+            <li class="hori"><span class="w">One of the top 10 leading causes of deaths in the Philippines (WC)</span></li>
+            <li class="hori"><span class="w">What activity can we participate in when our bodies of water are polluted? (WC; 5-2)</span></li>
+            <li class="hori"><span class="f">The acronym of the organization which announced that 815 million people suffer from chronic undernutrition (FC)</span></li>
+            <li class="hori"><span class="w">What can water do to one's life? (WC)</span></li>
+            <li class="hori"><span class="w">"Two-thirds of the _____ Face Water Shortages" (WC)</span></li>
+        </ol>
+    </div>
+    <div class="verti">
+        <h3 class="verti">Down Clues</h3>
+        <ol class="verti">
+            <li class="verti"><span class="f">What do we turn our food waste into so that it can be used as a fertilizer? (FC)</span></li>
+            <li class="verti"><span class="w">What is clean water supposed to be for everyone? (Home Page)</span></li>
+            <li class="verti"><span class="w">It is a non-profit organization providing people access to safe water & sanitation in developing countries by working with local water organizations. (WC; 5.3)</span></li>
+            <li class="verti"><span class="f">What does Rise Against Hunger aim to do? (FC)</span></li>
+            <li class="verti"><span class="g">The website by 3 Grade 9 students that wants to help alleviate the food and water crisis (HmM?)</span></li>
+        </ol>
+    </div>
+    
+    <!-- Answers & Such -->
+    <div class="answer">
+        <select id="clue">
+            <option value="none">Select Clue to Answer:</option>
+            <option value="1A">1A</option>
+            <option value="2A">2A</option>
+            <option value="3A">3A</option>
+            <option value="4A">4A</option>
+            <option value="5A">5A</option>
+            <option value="1D">1D</option>
+            <option value="2D">2D</option>
+            <option value="3D">3D</option>
+            <option value="4D">4D</option>
+            <option value="5D">5D</option>
+        </select>
+        <input type="text" id="answer">
+        <button class="ver" onclick="verify();">Verify Answer</button>
+        <p class="exp">The list of clues on the left will turn <span class="green">green</span> and their bullets will be filled if you have already answered them correctly.</p>
+    </div>
+    
+    <div class="cl1">
+        <ul class="cl">
+            <li class="cl" id="1A">1A</li>
+            <li class="cl" id="2A">2A</li>
+            <li class="cl" id="3A">3A</li>
+            <li class="cl" id="4A">4A</li>
+            <li class="cl" id="5A">5A</li>
+        </ul>
+    </div>
+    <div class="cl2">
+        <ul class="cl">
+            <li class="cl" id="1D">1D</li>
+            <li class="cl" id="2D">2D</li>
+            <li class="cl" id="3D">3D</li>
+            <li class="cl" id="4D">4D</li>
+            <li class="cl" id="5D">5D</li>
+        </ul>
+    </div>
+    
+    <!-- You've won the game!! -->
+    <div class="win" id="win">
+        <button class="win" onclick="closepu()">X</button>
+        <h2 class="win">Congratulations! You've finished the Crossword!! :D</h2>
+        <p class="win">Note: When you click the close button on the top right corner of this pop-up, it will reset the crossword.</p>
+    </div>
+    
+    <!-- Bottom -->
+    <div class="bottom">
+        <h1 class="titlebottom">AQUACIBUS</h1>
+        <p class="copyright">c Mg2023 by DE LEON, LAZARO, & SANTOS. <br> All rights reserved.</p>
+    </div>
+</body>
+    
+<script>
+    //For checking cookies
+    var c1, a2, a3, a4, a5, d1, d2, d3, d4, d5;
+    a1 = localStorage.getItem("a1");
+    a2 = localStorage.getItem("a2");
+    a3 = localStorage.getItem("a3");
+    a4 = localStorage.getItem("a4");
+    a5 = localStorage.getItem("a5");
+    d1 = localStorage.getItem("d1");
+    d2 = localStorage.getItem("d2");
+    d3 = localStorage.getItem("d3");
+    d4 = localStorage.getItem("d4");
+    d5 = localStorage.getItem("d5");
+
+    if (a1 == "true") {
+        document.getElementById("1A").style.listStyleType = "disc";
+        document.getElementById("1A").style.color = "#33cc33";
+    }
+    
+    if (a2 == "true") {
+        document.getElementById("2A").style.listStyleType = "disc";
+        document.getElementById("2A").style.color = "#33cc33";
+    }
+    
+    if (a3 == "true") {
+        document.getElementById("3A").style.listStyleType = "disc";
+        document.getElementById("3A").style.color = "#33cc33";
+    }
+    
+    if (a4 == "true") {
+        document.getElementById("4A").style.listStyleType = "disc";
+        document.getElementById("4A").style.color = "#33cc33";
+    }
+    
+    if (a5 == "true") {
+        document.getElementById("5A").style.listStyleType = "disc";
+        document.getElementById("5A").style.color = "#33cc33";
+    }
+    
+    if (d1 == "true") {
+        document.getElementById("1D").style.listStyleType = "disc";
+        document.getElementById("1D").style.color = "#33cc33";
+    }
+    
+    if (d2 == "true") {
+        document.getElementById("2D").style.listStyleType = "disc";
+        document.getElementById("2D").style.color = "#33cc33";
+    }
+    
+    if (d3 == "true") {
+        document.getElementById("3D").style.listStyleType = "disc";
+        document.getElementById("3D").style.color = "#33cc33";
+    }
+    
+    if (d4 == "true") {
+        document.getElementById("4D").style.listStyleType = "disc";
+        document.getElementById("4D").style.color = "#33cc33";
+    }
+    
+    if (d5 == "true") {
+        document.getElementById("5D").style.listStyleType = "disc";
+        document.getElementById("5D").style.color = "#33cc33";
+    }
+    
+    if (a1 == "true" && a2 == "true" && a3 == "true" && a4 == "true" && a5 == "true" && d1 == "true" && d2 == "true" && d3 == "true" && d4 == "true" && d5 == "true") {
+        document.getElementById("win").style.display = "block";
+    }
+    
+</script>
+</html>

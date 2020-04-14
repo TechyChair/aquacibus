@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Aquacibus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="icon" href="../pics/logoo.ico">
+	<link href="../css/external2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <script src="../js/Quiz.js"></script>
+</head>
+
+<body>
+        <!-- Logo -->
+        <header>
+            <a href="../index.html">
+                <img src="../pics/loogh.png" alt="Aquacibus" width="23%" height="23%">
+            </a>
+            <a href="https://twitter.com/Aquacibus1"><img src="../pics/twt.png" class="twt" title="Twitter"></a>
+            <a href="https://www.instagram.com/aquacibus_official/"><img src="../pics/insta.png" class="insta" title="Instagram"></a>
+            <a href="https://www.facebook.com/Aquacibus-100155774852924/?modal=admin_todo_tour"><img src="../pics/fb.png" class="facebook" title="Facebook"></a>
+            <p class="navd">Find Us:</p>
+        </header>
+        <!-- Navbar + Sidebar -->
+        <nav>
+            <ul>
+                <li>
+                    <button class="omenu" onclick="sbappear()">
+                        <img src="../pics/menu.png" alt="Menu" width="45px" height="45px">
+                    </button>
+                </li>
+
+                <li class="links"><a href="../index.html" class="nlink">Home</a></li>
+                <li class="links"><a href="../htdocs/Water Crisis.html" class="nlink">Water Crisis</a></li>
+                <li class="links"><a href="../htdocs/Food Crisis.html" class="nlink">Food Crisis</a></li>
+                <li class="links"><a href="../htdocs/Crossword.html" class="nlink">Crossword</a></li>
+                <li class="links"><a href="../htdocs/Quiz.html" class="nlink">Quiz</a></li>
+                <li class="links"><a href="../htdocs/Donate.html" class="nlink">Donate</a></li>
+                <li class="links"><a href="../htdocs/Feedback.html" class="nlink">Feedback</a></li>
+                <li class="links right"><a href="../htdocs/About Us.html" class="nlink">About Us</a></li>
+            </ul>
+            <div id="sidebar">
+                <div>
+                    <button class="cmenu" onclick="sbclose()">
+                        <img src="../pics/close.png" alt="Close" width="45px" height="45px">
+                    </button>
+                </div>
+                
+                <div class="sblink tsblink">
+                    <a href="../index.html" class="sblink">Home</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Water Crisis.html" class="sblink">Water Crisis</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Food Crisis.html" class="sblink">Food Crisis</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Crossword.html" class="sblink">Crossword</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Quiz.html" class="sblink">Quiz</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Donate.html" class="sblink">Donate</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Feedback.html" class="sblink">Feedback</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/About Us.html" class="sblink">About Us</a>
+                </div>
+            </div>   
+        </nav>
+
+<div class="cup" id="startCup"></div>
+
+<div class="emptycup" id="emptyCup"></div>
+
+<div class="cupone" id="cupOne"></div>
+
+<div class="cuptwo" id="cupTwo"></div>
+
+<div class="cupthree" id="cupThree"></div>
+
+<img src="../pics/plate.png" id="plate" class="plate">
+
+<img src="../pics/food.png" id="fullFood" class="saladfull">
+
+<img src="../pics/partonesalad.png" id="partonefood" class="saladone">
+
+<img src="../pics/saladparttwo.png" id="parttwofood" class="saladtwo">
+
+<img src="../pics/food.png" id="partthreefood" class="saladthree">
+
+<div class="quiz" id="quiz">
+	<h3 class="introquiz">Test Your Knowledge</h3>
+	<p id="desQuiz" class="desquiz">Take this quiz to test how much you've learned here on Aquacibus on the food and water crisis. Each answer you get correct will slowly fill up the cup and plate above. Click the button below to start!</p>
+	<button id="startButton" class="startbutton" onclick="startFunction()"><span>Start Quiz</span></button>
+</div>
+
+<center>
+
+<div id="divQuestionOne" class="quizDetail">
+	<h5 class="questionDetail">815 million people around the world suffer from this sickness related to food. What is it?</h5>
+	<p id="choiceA" class="choicesDetail"><input type="radio" id="choicea" name="answer" onclick="questionOneFunction()">    Diarrhea</button><br> </p>
+	<p id="choiceB" class="choicesDetail"><input type="radio" id="choiceb" name="answer" onclick="questionOneFunction()">    Chronic Undernourishment</button><br> </p>
+	<p id="choiceC" class="choicesDetail"><input type="radio" id="choicec" name="answer" onclick="questionOneFunction()">    Obesity</button></p>
+	<button class="buttonQues" id="buttonToQuestionTwo" onclick="startTwoFunction()"><span>Next</span></button>
+</div>
+
+<div id="divQuestionTwo" class="quizDetail">
+	<h5 class="questionDetail">What is one of the leading causes of deaths in the Philippines that has something to do with unclean water sources?</h5>
+	<p id="choiceAtwo" class="choicesDetail"><input type="radio" id="choiceatwo" name="answer" onclick="questionTwoFunction()">    Asthma<br> </p>
+	<p id="choiceBtwo" class="choicesDetail"><input type="radio" id="choicebtwo" name="answer" onclick="questionTwoFunction()">    Polio<br> </p>
+	<p id="choiceCtwo" class="choicesDetail"><input type="radio" id="choicectwo" name="answer" onclick="questionTwoFunction()">    Acute Watery Diarrhea</p>
+	<button class="buttonQues" id="buttonToQuestionThree" onclick="startThreeFunction()"><span>Next</span></button>
+</div>
+
+<div id="divQuestionThree" class="quizDetail">
+	<h5 class="questionDetail">What is an example of putting food waste into good use that would benefit and help plants?</h5>
+	<p id="choiceAthree" class="choicesDetail"><input type="radio" id="choiceathree" name="answer" onclick="questionThreeFunction()">   Turning it into compost and using it to fertilize plants.<br> </p>
+	<p id="choiceBthree" class="choicesDetail"><input type="radio" id="choicebthree" name="answer" onclick="questionThreeFunction()">   Using it to be motivated and not die and not be like the food waste, horrible and useless.<br> </p>
+	<p id="choiceCthree" class="choicesDetail"><input type="radio" id="choicecthree" name="answer" onclick="questionThreeFunction()">   Make the animals eat it so they wouldn't eat the plants instead.</p>
+	<button class="buttonQues" id="buttonToQuestionFour" onclick="startFourFunction()"><span>Next</span></button>
+</div>
+
+<div id="divQuestionFour" class="quizDetail">
+	<h5 class="questionDetail">Which of these charities for water is not included in the website?</h5>
+	<p id="choiceAfour" class="choicesDetail"><input type="radio" id="choiceafour" name="answer" onclick="questionFourFunction()">    Water For Everyone.<br> </p>
+	<p id="choiceBfour" class="choicesDetail"><input type="radio" id="choicebfour" name="answer" onclick="questionFourFunction()">    Charity: Water<br> </p>
+	<p id="choiceCfour" class="choicesDetail"><input type="radio" id="choicecfour" name="answer" onclick="questionFourFunction()">    Waves for Water </p>
+	<button class="buttonQues" id="buttonToQuestionFive" onclick="startFiveFunction()"><span>Next</span></button>
+</div>
+
+<div id="divQuestionFive" class="quizDetail">
+	<h5 class="questionDetail">What are the two words that make up Aquacibus and what do they mean?</h5>
+	<p id="choiceAfive" class="choicesDetail"><input type="radio" id="choiceafive" name="answer" onclick="questionFiveFunction()">   Aqua, which means wet and Cibus which means throat.<br> </p>
+	<p id="choiceBfive" class="choicesDetail"><input type="radio" id="choicebfive" name="answer" onclick="questionFiveFunction()">   Agua, which means water, and Crybus, which means sadness.<br> </p>
+	<p id="choiceCfive" class="choicesDetail"><input type="radio" id="choicecfive" name="answer" onclick="questionFiveFunction()">   Aqua, which means water, and Cibus, which means food. </p>
+	<button class="buttonQues" id="buttonToQuestionSix" onclick="startSixFunction()"><span>Next</span></button>
+</div>
+
+<div id="divQuestionSix" class="quizDetail">
+	<h5 class="questionDetail">What is an example of little ways in conserving water?</h5>
+	<p id="choiceAsix" class="choicesDetail"><input type="radio" id="choiceasix" name="answer" onclick="questionSixFunction()">   Using lots of water for baths when you don't even need it.<br> </p>
+	<p id="choiceBsix" class="choicesDetail"><input type="radio" id="choicebsix" name="answer" onclick="questionSixFunction()">   Turning the faucet off when you're not using it.<br> </p>
+	<p id="choiceCsix" class="choicesDetail"><input type="radio" id="choicecsix" name="answer" onclick="questionSixFunction()">   Letting the water run even when the container is full. </p>
+	<button class="buttonResults" id="buttonToResults" onclick="resultsFunction()"><span>See Results</span></button>
+</div>
+
+<div id="divResults" class="quizDetail">
+	<h5 class="resultsintro">Your score is</h5>
+	<p class="resultsdeets"><span id="totalpoints"></span> out of 6</p>
+	<button class="buttonRestart" id="buttonToRestart" onclick="window.location.reload()"><span>Try again?</span></button>
+</div>
+
+<div class="bottom">
+	<h1 class="titlebottom">AQUACIBUS</h1>
+	<p class="copyright">c Mg2023 by DE LEON, LAZARO, & SANTOS. <br> All rights reserved.</p>
+</div>
+
+</center>
+
+</body>
+
+</html>
