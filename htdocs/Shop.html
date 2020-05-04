@@ -1,0 +1,249 @@
+<html>
+<head>
+    <!-- Title & Meta Tags -->
+        <title>Concept Store</title>
+        <meta name="description" content="Aquacibus's very own concept store with original products created by our team. All proceeds will go to our cause to support food & water charities."/>
+		<meta name="keywords" content="aquacibus, concept store, original"/>
+		<meta name="author" content="Franzesca De Leon, Benjeouelle Lazaro, Danielle Santos"/>
+		<meta name="revised" content="Franzesca De Leon, Benjeouelle Lazaro, Danielle Santos, 04/29/2020"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Icon, CSS, & Fonts -->
+        <link rel="icon" href="../pics/logoo.ico">
+		<link rel="stylesheet" href="../css/Shop.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unica+One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157736734-6"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-157736734-6');
+        </script>
+</head>
+<body id="gbt">
+    <div class="stick">
+    <!-- Logo -->
+        <header>
+            <a href="../index.html">
+                <img src="../pics/loogh.png" alt="Aquacibus" width="23%">
+            </a>
+            <a href="https://twitter.com/Aquacibus1"><img src="../pics/twt.png" class="twt" title="Twitter"></a>
+            <a href="https://www.instagram.com/aquacibus_official/"><img src="../pics/insta.png" class="insta" title="Instagram"></a>
+            <a href="https://www.facebook.com/Aquacibus-100155774852924/?modal=admin_todo_tour"><img src="../pics/fb.png" class="facebook" title="Facebook"></a>
+            <p class="navd">Find Us:</p>
+        </header>
+    <!-- Navbar + Sidebar -->
+        <nav>
+            <ul>
+                <li class="links">
+                    <button class="omenu" onclick="sbappear()">
+                        <img src="../pics/menu.png" alt="Menu" width="45px" height="45px">
+                    </button>
+                </li>
+
+                <li class="links o"><a href="../index.html" class="nlink">Home</a></li>
+                <li class="links o"><a href="../htdocs/Water Crisis.html" class="nlink">Water Crisis</a></li>
+                <li class="links o"><a href="../htdocs/Food Crisis.html" class="nlink">Food Crisis</a></li>
+                <li class="links o"><a href="../htdocs/Crossword.html" class="nlink">Crossword</a></li>
+                <li class="links o"><a href="../htdocs/Quiz.html" class="nlink">Quiz</a></li>
+                <li class="links o"><a href="../htdocs/Donate.html" class="nlink">Donate</a></li>
+                <li class="links o"><a href="../htdocs/Shop.html" class="nlink">Store</a></li>
+                <li class="links o"><a href="../htdocs/Feedback.html" class="nlink">Feedback</a></li>
+                <li class="links right o"><a href="../htdocs/About Us.html" class="nlink">About Us</a></li>
+            </ul>
+            <div id="sidebar">
+                <div>
+                    <button class="cmenu" onclick="sbclose()">
+                        <img src="../pics/close.png" alt="Close" width="45px" height="45px">
+                    </button>
+                </div>
+                
+                <div class="sblink tsblink">
+                    <a href="../index.html" class="sblink">Home</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Water Crisis.html" class="sblink">Water Crisis</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Food Crisis.html" class="sblink">Food Crisis</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Crossword.html" class="sblink">Crossword</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Quiz.html" class="sblink">Quiz</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Donate.html" class="sblink">Donate</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Shop.html" class="sblink">Store</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/Feedback.html" class="sblink">Feedback</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="../htdocs/About Us.html" class="sblink">About Us</a>
+                </div>
+                
+                <div class="sblink">
+                    <a href="#gbt" class="sblink">Go Back to Top</a>
+                </div>
+            </div>   
+        </nav>
+    </div>
+    
+    <!-- Categories -->
+    <div class="cat">
+        <ul class="cat">
+            <li><button class="cat" onclick="pos(2); shirt();">T-Shirts</button></li>
+            <li><button class="cat" onclick="pos(3); pin();">Buttons/Pins</button></li>
+            <li><button class="cat" onclick="pos(4); eco()">Eco-friendly Products</button></li>
+            <li><button class="cat" onclick="pos(5); pcase();">Phone Cases</button></li>
+            <li><button class="cat" onclick="pos(6); lstick();">Lightstick</button></li>
+        </ul>
+    </div> 
+    
+    <!-- Actual Shopping --> 
+    <section id="shirt">
+        <div id="prod1">
+            <img src="../pics/Shirt.png" alt="Aquacibus Official Shirt 1"/ class="shirt">
+            <p class="shirt s1">This shirt is the official brand design of Aquacibus, a website designed to raise awareness about the food and water crisis our fellow brothers and sisters are experiencing right now. It bears the official logo along with the two-tone Aquacibus title, which garners attention and speaks up about the websites goal. Simple, yet an explosion of compassion and perseverance to make a change.</p>
+            <h2 class="shirt">ACB: For the World Shirt</h2>
+            <h3 class="shirt">Php 250.00</h3>
+            <button onclick="prod(1)" class="shirt">Add to Cart <img src="../pics/cart.png" alt="Cart Icon" class="acart"/></button>
+        </div>
+        
+        <div id="prod2">
+            <img src="../pics/Shirt2.png" alt="Aquacibus Official Shirt 2" class="shirt"/>
+            <p class="shirt s2">A limited edition shirt of the ACB line, this design explains and declares what the Aquacibus website is for. It shows off the official Aquacibus logo, personally designed to represent our aim to spread awareness about the food and water crisis the world is experiencing right now, along with two strong and distinct phrases: “for the world’s food and water”, a saying that directly comes from the website, showcasing the passion we have in battling this problem, and “this means aquacibus.”, higlighting that Aquacibus exists to help our world. A shirt that speaks millions from two strong phrases.</p>
+            <h2 class="shirt">ACB: This is Us Shirt</h2>
+            <h3 class="shirt">Php 300.00</h3>
+            <button onclick="prod(2)" class="shirt">Add to Cart <img src="../pics/cart.png" alt="Cart Icon" class="acart"/></button>
+        </div>
+    </section>
+    
+    <section id="pin">
+        <div id="prod3">
+            <img src="../pics/button1.png" alt="Aquacibus Logo Pin" class="pin"/>
+            <h2 class="pin ab">Aquacibus</h2>
+            <p class="pin ab">The official brand button design features the Aquacibus logo’s two-toned pair of leaves with each leaf representing one part of our mission: the food and water crisis. Show your support towards our cause through purchasing the original Aquacibus button.</p>
+            <h3 class="pin">Php 75.00</h3>
+            <button onclick="prod(3)" class="pin">Add to Cart <img src="../pics/cart.png" alt="Cart Icon" class="bcart"/></button>
+        </div>
+        
+        <div id="prod4">
+            <img src="../pics/button2.png" alt=""Every Drop Counts" Pin" class="pin"/>
+            <h2 class="pin edcb">"Every Drop Counts"</h2>
+            <p class="pin edcb">Here at Aquacibus, we believe that every drop counts. It is a part of our goal to bring awareness to the millions across the globe who do not have access to clean, safe water. Help spread this cause through wearing one of our Every Drop Counts buttons.</p>
+            <h3 class="pin">Php 75.00</h3>
+            <button onclick="prod(4)" class="pin">Add to Cart <img src="../pics/cart.png" alt="Cart Icon" class="bcart"/></button>
+        </div>
+        
+        <div id="prod5">
+            <img src="../pics/button3.png" alt=""Food for Thought" Pin" class="pin"/>
+            <h2 class="pin ftb">"Food for Thought"</h2>
+            <p class="pin ftb">Here’s some food for thought: out of the billions of tons of food being produced every year, a third of it is wasted, yet many remain hungry. It is a part of our mission to bring awareness towards the food crisis. Help show your thoughts for food, or the lack of it, through buying one of our buttons.</p>
+            <h3 class="pin">Php 75.00</h3>
+            <button onclick="prod(5)" class="pin">Add to Cart <img src="../pics/cart.png" alt="Cart Icon" class="bcart"/></button>
+        </div>
+    </section>
+    
+    <section id="eco">
+        <div id="prod6">
+            <img src="../pics/straw.png" alt="Metal Straw Set" class="eco1"/>
+            <h2 class="eco">Metal Straw Set</h2>
+            <p class="eco1">Our very own version of metal straws comes in a set of 3 along with a carrying pouch, this is definitely a need when buying drinks. By using these, we can lessen the use of plastic straws & provide a reusable option. Our straws can easily be reused since all it takes is just a wash & it’s good as new. Its metal shine also makes you look classy while saving our precious waters.</p>
+            <h3 class="eco1">Php 60.00</h3>
+            <button onclick="prod(6)" class="eco1">Add to Cart <img src="../pics/cart.png" alt="Cart Icon" class="ecart1"/></button>
+        </div>
+        
+        <div id="prod7">
+            <img src="../pics/hflask.png" alt="Hydroflask" class="eco2"/>
+            <h2 class="eco center">Aquacibus Hydroflask</h2>
+            <p class="eco2">Sksksks anioop! Aquacibus has its own trademark hydroflask with our official logo! The Aquacibus hydroflask is a must to stay hydrated! Our Aquacibus hydroflask helps lessen the amount of plastic containers as it becomes a substitute, keeping all your drinks cold and you can also carry it around due to its light and thin design. This would help you stay hydrated while helping save our world from pollution.</p>
+            <h3 class="eco2">Php 800.00</h3>
+            <button onclick="prod(7)" class="eco2">Add to Cart <img src="../pics/cart.png" alt="Cart Icon" class="ecart2"/></button>
+        </div>
+    </section>
+    
+    <section id="pcase">
+        <div id="prod8">
+            <img src="../pics/case1.png" alt="Water Case" class="pcase"/>
+            <h2 class="pcase">Domi Phone Case</h2>
+            <p class="pcase w">This cute water droplet will definitely protect your phone! Show your support to Aquacibus' mission of making every drop of water count and bringing awareness to the global water crisis.</p>
+            <h3 class="pcase">Php 100.00</h3>
+            <button onclick="prod(8)" class="pcase">Add to Cart <img src="../pics/cart.png" alt="Cart Icon" class="pcart"/></button>
+        </div>
+        
+        <div id="prod9">
+            <img src="../pics/case2.png" alt="Corn Case" class="pcase"/>
+            <h2 class="pcase">Callus Phone Case</h2>
+            <p class="pcase c">Don't you want this cute corn protecting your phone? Buy this corn-themed phone case, & show your support to our cause here at Aquacibus to bring awareness to those affected by the food crisis.</p>
+            <h3 class="pcase">Php 100.00</h3>
+            <button onclick="prod(9)" class="pcase">Add to Cart <img src="../pics/cart.png" alt="Cart Icon" class="pcart"/></button>
+        </div>
+    </section>
+    
+    <section id="lstick">
+        <div id="prod10">
+            <img src="../pics/lightstick.png" alt="Aquacibus Lightstick" class="lstick"/>
+            <h2 class="lstick">Aquacibus Lightstick</h2>
+            <p class="lstick">Hana, dul, set! Annyeonghaseyo Aquacibus imnida! Take home one of our lightsticks to show your support to Aquacibus and our cause. It features a light-up Aquacibus logo and our signature blue and yellow colors on its handle.</p>
+            <h3 class="lstick">Php 1,500.00</h3>
+            <button onclick="prod(10)" class="lstick">Add to Cart</button>
+        </div>
+    </section>
+    
+    <!-- Actual Cart & About Store -->
+    <section id="cart">
+        <div class="total">
+            <ul>
+                <li id="toti">Total No. of Items: </li>
+                <li id="totit">10 items</li>
+                <li id="totp">Total Price: </li>
+                <li id="totpt">Php 1 500</li>
+                <li><button onclick="ucookie();" class="save">Save Changes</button></li>
+                <li><button onclick="ccookie();" class="clear">Clear All</button></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h1 class="aabout">Aquacibus Concept Store</h1>
+        <p class="aabout nyehe">Welcome to the Aquacibus Concept Store! To browse our products, you can select from the categories on the <span style="color: #f59192; text-shadow: 2px 1.5px white;">coral pink box</span> on the left. You can also view your cart and go back to this on the <span style="color: #8ad6cc; text-shadow: 2px 1.5px #666666;">light teal box</span> on the bottom-left. </p>
+        
+        <p class="aabout">Despite this, we assure you that all of our products are very high-quality and they also come with a <span style="text-shadow: 2px 1.5px white;">1-week return period</span> if your received product has any defects or damage with your <span style="text-shadow: 2px 1.5px white;">money back guaranteed!</span> </p>
+        
+        <p class="aabout nyehe">Please note that <span style="text-shadow: 2px 1.5px white;">all profits</span> from our concept store will be <span style="text-shadow: 2px 1.5px white;">donated to the various charities that we support</span> in order to help alleviate the food and water crises all over the world.</p>
+        
+        <p class="aabout">We hope your experience with our concept store & products will convince you to donate to our cause or buy our products again. <span style="text-shadow: 2px 1.5px white;">Thank you and enjoy! :D</span> </p>
+    </section>
+    
+    <!-- Cart & About -->
+    <div class="cart">
+        <ul class="cat">
+            <li><button onclick="pos(7); cart(); oscart(); rcookie(); calc();" class="cart real">View Cart <img src="../pics/cart.png" alt="Cart Icon"/ class="cart"></button></li>
+            <li><button onclick="pos(8); about();" class="cart">About Our Store</button></li>
+        </ul>
+    </div>
+    
+</body>
+<!-- JS Script Ref -->
+<script src="../js/Shop.js"></script>
+   
