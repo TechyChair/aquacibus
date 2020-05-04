@@ -131,4 +131,6 @@ function SaveForm() {
     if (number != "") {
         localStorage.setItem("number", number);
     }
+    
+    localStorage.setItem("tarea", tarea);
 }
