@@ -1,0 +1,891 @@
+/* Box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* To remove default margins */
+body {
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+/* Sticky Stoof */
+div.stick {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 3;
+}
+
+/* For Social Media Stoof in Header */
+.navd {
+    float: right;
+    margin-top: 2.7%;
+    margin-right: 1%;
+	font-family: "Lato";
+	font-size: 17.4px;
+	color: #242929;
+}
+
+.facebook {
+	height: 42px;	
+    float: right;
+    margin-top: 1.95%;
+    margin-right: 0.5%;
+}
+
+.insta {
+	height: 28px;
+    float: right;
+    margin-top: 2.55%;
+    margin-right: 1%;
+}
+
+.twt {
+	height: 41px;	
+    float: right;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+
+/* For navbar + sidebar + logo */
+nav {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #00cccc;
+    font-family: "Lato";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.links {
+    display: inline;
+    margin-right: 12px;
+    padding: 15px;
+    height: inherit;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.15em;
+}
+
+li.links.o:hover {
+    transition: all 0.25s ease;
+    background-image: linear-gradient(to right, #74ebd5, #acb6e5);
+    border: 1.5px #003333 solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
+}
+
+.right {
+    float: right;
+}
+
+li:hover a {
+    transition: all 0.25s ease;
+    color: black;
+    text-decoration: underline;
+    text-shadow: 1.5px 1.5px white;
+}
+
+.nlink:hover a {
+    color: black;
+}
+
+a.nlink {
+    text-decoration: none;
+    color: white;
+}
+
+a.sblink {
+    text-decoration: none;
+    color: black;
+}
+
+div.sblink:hover  {
+    background-image: linear-gradient(to left, #aaffa9, #11ffbd);
+    border: 1.5px #f8e8e8 solid;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+
+.sblink:hover a {
+    text-decoration: underline;
+    color: white;
+    text-shadow: 1.5px 1.5px #666666; 
+    transition: all 0.25s ease;
+}
+
+.omenu {
+    background: transparent;
+    border: none;
+}
+
+.omenu:hover {
+    background: #009999;
+    border-radius: 45px;
+    box-shadow: 2.5px 2.5px grey;
+    transition: all 0.25s ease;
+}
+
+.omenu:active {
+    transition: all 0.05s ease;
+    box-shadow: 0.5px 0.5px 3px 3px #165050 inset;
+}
+
+.cmenu {
+    background: transparent;
+    border: none;
+    margin-top: 8px;
+    position: absolute;
+    right: 0px;
+}
+
+.cmenu:hover {
+    background: #99e6e6;
+    border-radius: 45px;
+    box-shadow: 2.5px 2.5px grey;
+    transition: all 0.25s ease;
+}
+
+.cmenu:active {
+    transition: all 0.05s ease;
+    box-shadow: 0.5px 0.5px 3px 3px #08c1c4 inset;
+}
+
+.sblink {
+    height: 7%;
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-top: 8px;
+    text-align: left;
+    vertical-align: middle;
+    font-family: "Lato";
+}
+
+#sidebar {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #ccffff;
+    display: none;
+}
+
+.close {
+    width: 45px;
+    height: 45px;
+}
+
+.menu {
+    width: 45px;
+    height: 45px;
+}
+
+/* Categories */
+div.cat {
+    width: 18.5%;
+    float: left;
+    margin-left: 2.5%;
+    margin-top: 12%;
+    background: #f59192;
+    padding: 2.3% 1.5% 0% 1.5%;
+    border-radius: 50px;
+    height: 47.5%;
+    box-shadow: 5px 5px #666666;
+}
+ul.cat {
+    list-style-type: none;
+    text-align: center;
+}
+
+button.cat {
+    font-family: "Bebas Neue";
+    font-size: 1.5em;
+    background: transparent;
+    border: none;
+    transition: all ease 0.15s;
+    border-radius: 25px;
+    padding: 5%;
+    margin-bottom: 2.5%;
+}
+
+button.cat:hover {
+    text-shadow: 3.5px 2.5px white;
+    border: 2.5px outset #b2eee6;
+}
+
+button.cat:active {
+    color: white;
+    text-shadow: 3.5px 2.5px black;
+    border: 2.5px inset #b2eee6;
+    background: #f37071;
+}
+
+/* Cart & About */
+div.cart {
+    width: 18.5%;
+    background: #8ad6cc;
+    float: left;
+    margin-left: 2.5%;
+    margin-top: -10.5%;
+    border-radius: 50px;
+    padding: 1.5%;
+    box-shadow: 5px 5px #666666;
+}
+
+img.cart {
+    width: 18%;
+}
+
+button.cart {
+    background: transparent;
+    border: none;
+    font-family: "Righteous";
+    font-size: 1.25em;
+    padding: 3.5%;
+    width: 85%;
+    border-radius: 20px;
+    height: auto;
+    margin-bottom: 3.5%;
+}
+
+button.cart.real {
+    width: 75%;
+}
+
+button.cart:hover {
+    text-shadow: 2.5px 1.5px white;
+    border: 1.5px outset #f3c2e7;
+}
+
+button.cart:active {
+    background: #66beb2;
+    color: white;
+    text-shadow: 2.5px 1.5px black;
+    border: 1.5px inset #f3c2e7;
+}
+
+/* Products */
+
+/* T-shirts */
+#shirt {
+    float: left;
+    margin-top: 12%;
+    margin-left: 2.5%;
+    width: 74%;
+    height: 72%;
+    background: #efeebe;
+    padding: 2.5%;
+    display: none;
+}
+
+#prod1, #prod2 {
+    width: 47.5%;
+    height: 100%;
+    float: left;
+    margin-top: 0.75%;
+}
+
+#prod1 {
+    margin-right: 5%;
+}
+
+img.shirt {
+    width: 50%;
+    border: 5px solid #6dfbed;
+    float: left;
+}
+
+h2.shirt {
+    width: 70%;
+    float: left;
+    margin: 2.75% 2.5% 2.5% 2.5%;
+    font-family: "Patua One";
+    font-size: 1.75em;
+}
+
+h3.shirt {
+    width: 70%;
+    float: left;
+    margin: 2.5%;
+    font-family: "Unica One";
+    font-size: 1.45em;
+}
+
+p.shirt {
+    width: 45%;
+    float: left;
+    font-family: "Comfortaa";
+    text-align: center;
+    margin-left: 2.5%;
+}
+
+.s1 {
+    margin: 3% 2% 2% 2%;
+    font-size: 0.93em;
+}
+
+.s2 {
+    margin: 5% 2% 2% 2%;
+    font-size: 0.743em;
+}
+
+button.shirt {
+    float: left;
+    width: 20%;
+    font-family: "Unica One";
+    font-size: 1.25em;
+    text-align: center;
+    margin: -12% 1.5% 1.5% 1.5%;
+    padding: 1.5%;
+    background: transparent;
+    border: 2px solid black;
+    transition: all ease 0.15s;
+}
+
+button.shirt:hover {
+    text-shadow: 3px 2.5px white;
+    border-radius: 30px;
+}
+
+button.shirt:active {
+    background: #ffff4d;
+}
+
+img.acart {
+    width: 50%;
+}
+
+/* Buttons/Pins */
+#pin {
+    float: left;
+    margin-top: 12%;
+    margin-left: 2.5%;
+    width: 74%;
+    height: 72%;
+    background: #ccd9ff;
+    padding: 0.75% 1.5% 1.5% 1.5%;
+    display: none;
+}
+
+#prod3, #prod4, #prod5 {
+    float: left;
+    width: 49%;
+    margin-bottom: 0%;
+    padding: 0.25% 1.5% 1.5% 0.5%;
+    height: 50%;
+}
+
+#prod4 {
+    margin-left: 2%;
+}
+
+img.pin {
+    width: 45%;
+    float: left;
+    padding-top: 2.55%;
+    margin-right: 10;
+}
+
+h2.pin {
+    width: 52%;
+    float: left;
+    margin-top: 2.5%;
+    font-family: "Patua One";
+    text-align: center;
+}
+
+h2.ab {
+    font-size: 1.75em;
+}
+
+h2.edcb, h2.ftb {
+    font-size: 1.6em;
+}
+
+p.pin {
+    width: 52%;
+    float: left;
+    margin-top: -4%;
+    font-family: "Comfortaa";
+    text-align: center;
+    font-size: 0.75em;
+}
+
+h3.pin {
+    float: left; 
+    width: 20%;
+    font-family: "Unica One";
+    font-size: 1.15em;
+    margin-top: 1.5%;
+    margin-left: 2.5%;
+}
+
+button.pin {
+    width: 30%;
+    float: left;
+    padding: 1.5%;
+    margin-top: -1%;
+    font-family: "Unica One";
+    font-size: 1.15em;
+    background: transparent;
+    border: 1.5px solid black;
+    transition: all ease 0.15s;
+}
+
+button.pin:hover {
+    border-radius: 20px;
+    text-shadow: 3px 2.5px white;
+}
+
+button.pin:active {
+    background: #809fff;
+}
+
+img.bcart {
+    width: 20%;
+}
+
+/* Eco-friendly Products */
+#eco {
+    float: left;
+    margin-top: 12%;
+    margin-left: 2.5%;
+    width: 74%;
+    height: 72%;
+    background: #9fdf9f;
+    padding: 2% 2.5% 2.5% 2%;
+    display: none;
+}
+
+#prod6, #prod7 {
+    width: 48.75%;
+    float: left;
+}
+
+#prod6 {
+    margin-right: 2.5%;
+    height: 100%;
+}
+
+img.eco1 {
+    float: left;
+    height: 55%;
+    margin: 2% 18% -4.5% 18%;
+}
+
+img.eco2 {
+    float: left;
+    height: 99%;
+}
+
+h2.eco {
+    float: left;
+    width: 60%;
+    margin-left: 2.5%;
+    font-family: "Patua One";
+    font-size: 1.5em;
+}
+
+.center {
+    text-align: center;
+}
+
+h3.eco1 {
+    float: left;
+    margin: 0.5% 7.5% 0% 3.5%;
+    width: 40%;
+    font-family: "Unica One";
+    font-size: 1.5em;
+}
+
+h3.eco2 {
+    float: left;
+    width: 30%;
+    margin-left: 5.5%;
+    margin-right: 1.5%;
+    font-family: "Unica One";
+    font-size: 1.5em;
+}
+
+p.eco1 {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: -2.5%;
+   font-family: "Comfortaa";
+   font-size: 0.75em;
+    float: left;
+    text-align: justify;
+}
+
+p.eco2 {
+    float: left;
+    width: 60%;
+    margin-left: 2.5%;
+    margin-top: 0%;
+    font-family: "Comfortaa";
+    font-size: 1em;
+    text-align: center;
+}
+
+button.eco1 {
+    float: left;
+    width: 45%;
+    margin-top: -1%;
+    font-family: "Unica One";
+    font-size: 1.25em;
+    padding: 2%;
+    background: transparent;
+    border: 2px solid black;
+    transition: all ease 0.15s;
+}
+
+button.eco2 {
+    float: left;
+    width: 25%;
+    margin-top: 1%;
+    font-family: "Unica One";
+    font-size: 1.25em;
+    padding: 1.5%;
+    background: transparent;
+    border: 2px solid black;
+    transition: all ease 0.15s;
+}
+
+button.eco1:hover, button.eco2:hover {
+    border-radius: 20px;
+    text-shadow: 2.5px 2px white;
+}
+
+button.eco1:active, button.eco2:active {
+    background: #66cc66;
+}
+
+img.ecart1 {
+    width: 10%;
+}
+
+img.ecart2 {
+    width: 25%;
+}
+
+/* Phone Cases */
+#pcase {
+    float: left;
+    margin-top: 10.75%;
+    margin-left: 2.5%;
+    width: 74%;
+    height: 72%;
+    background: #dbd5f9;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    display: none;
+}
+
+#prod8, #prod9 {
+    width: 48%;
+    float: left;
+    height: 100%;
+}
+
+#prod9 {
+    margin-left: 4%;
+}
+
+img.pcase {
+    float: left;
+    width: 50%;
+    margin-right: 4%;
+}
+
+h2.pcase {
+    float: left;
+    width: 45%;
+    text-align: center;
+    font-family: "Patua One";
+    font-size: 1.75em;
+}
+
+p.pcase {
+    float: left;
+    margin-top: -2%;
+    width: 45%;
+    font-family: "Comfortaa";
+    text-align: center;
+}
+
+.w {
+    font-size: 1.1em;
+}
+
+.c {
+    font-size: 1.1em;
+}
+
+h3.pcase {
+    float: left;
+    margin-top: -0.5%;
+    width: 45%;
+    text-align: center;
+    font-family: "Unica One";
+    font-size: 1.5em;
+}
+
+button.pcase {
+    float: left;
+    margin-left: 2.5%;
+    margin-top: -2.5%;
+    width: 40%;
+    font-family: "Unica One";
+    font-size: 1.5em;
+    background: transparent;
+    border: 1.5px solid black;
+    transition: all ease 0.15s;
+    padding: 1.5%;
+}
+
+button.pcase:hover {
+    border-radius: 20px;
+    text-shadow: 3px 2.5px white;
+}
+
+button.pcase:active {
+    background: #b3a6f2;
+}
+
+img.pcart {
+    padding-top: 2.5%;
+    width: 15%;
+}
+
+/* Lightstick */
+#lstick {
+    float: left;
+    margin-top: 12%;
+    margin-left: 2.5%;
+    width: 74%;
+    height: 72%;
+    background: #ffcc66;
+    padding: 0% 5% 1.5% 5%;
+    display: none;
+}
+
+#prod10 {
+    width: 100%;
+}
+
+img.lstick {
+    float: left; 
+    height: 100%;
+    margin-top: 0%;
+    margin-right: 5%;
+}
+
+h2.lstick {
+    float: left;
+    width: 65%;
+    margin-top: 7.5%;
+    font-family: "Patua One";
+    font-size: 2.25em;
+    text-align: center;
+    margin-bottom: 4.5%;
+}
+
+p.lstick {
+    font-family: "Comfortaa";
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 4.5%;
+}
+
+h3.lstick {
+    float: left;
+    font-family: "Unica One";
+    font-size: 1.75em;
+    margin-left: 12.5%;
+    margin-right: 7.5%;
+}
+
+button.lstick {
+    float: left;
+    background: transparent;
+    border: 2px solid black;
+    padding: 2.5%;
+    font-family: "Unica One";
+    font-size: 1.5em;
+    transition: all ease 0.15s;
+}
+
+button.lstick:hover {
+    border-radius: 20px;
+    text-shadow: 3px 2.5px white;
+}
+
+button.lstick:active {
+    background: #ffb31a;
+}
+
+/* Actual Cart */
+#cart {
+    float: left;
+    margin-top: 11%;
+    margin-left: 2.5%;
+    width: 74%;
+    height: 72%;
+    background: #e6e6e6;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    display: none;
+}
+
+.prodic {
+    float: left;
+    width: 37.5%;
+    height: 18%;
+    border: 2px solid black;
+    padding: 1% 1.5% 0.5% 1.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    background: white;
+}
+
+.h2ic {
+    margin-top: 0%;
+    font-family: "Patua One";
+    font-size: 1.25em;
+    text-shadow: 1.5px 1px white;
+}
+
+.btnic {
+    background: none;
+    border: none;
+    font-family: "Unica One";
+    padding: 0.75% 1.25% 0.75% 1.25%;
+    transition: all ease 0.15s;
+}
+
+.btnic:hover {
+    border-radius: 20px;
+    color: white;
+    background: #ff4d4d;
+}
+
+.btnic:active {
+    box-shadow: 2.5px 2px #666666;
+    text-shadow: 1.5px 1px black;
+}
+
+.inputic {
+    float: left;
+    width: 12%;
+    margin-right: 5%;
+}
+
+.paric {
+    float: left;
+    margin-top: 0%;
+    margin-right: 5%;
+    font-family: "Unica One";
+}
+
+div.total {
+    position: fixed;
+    top: 32%;
+    right: 1%;
+    width: 20%;
+    font-family: "Unica One";
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#totp, #toti {
+    margin-top: 15%;
+}
+
+button.save {
+    margin-top: 15%;
+    background: transparent;
+    border: none;
+    padding: 5%;
+    font-family: "Unica One";
+    font-size: 1em;
+    border: 2px solid black;
+    transition: all ease 0.15s;
+}
+
+button.save:hover {
+    border-radius: 20px;
+    text-shadow: 3px 2.5px white;
+}
+
+button.save:active {
+    background: #00b300;
+    box-shadow: 4px 4px #666666;
+    text-shadow: 3px 2.5px black;
+    color: white;
+}
+
+button.clear {
+    margin-top: 10%;
+    background: transparent;
+    border: none;
+    padding: 5%;
+    font-family: "Unica One";
+    font-size: 1em;
+    border: 2px solid black;
+    transition: all ease 0.15s;
+}
+
+button.clear:hover {
+    border-radius: 20px;
+    text-shadow: 3px 2.5px white;
+}
+
+button.clear:active {
+    background: #ff4d4d;
+    box-shadow: 4px 4px #666666;
+    text-shadow: 3px 2.5px black;
+    color: white;
+}
+
+/* Actual About */
+#about {
+    float: left;
+    margin-top: 11.5%;
+    margin-left: 2.5%;
+    width: 74%;
+    height: 72%;
+    background-image: linear-gradient(to bottom right, #66dbff, #ffff80);
+    padding: 1.5% 3% 2.5% 3%;
+    display: block;
+}
+
+h1.aabout {
+    float: left;
+    width: 100%;
+    margin-top: 0%;
+    text-align: center;
+    font-family: "Permanent Marker";
+    font-size: 3em;
+    text-shadow: 7.5px 7px white;
+}
+
+p.aabout {
+    float: left; 
+    width: 45%;
+    margin-top: -1.5%;
+    margin-bottom: 5%;
+    font-family: "Comfortaa";
+    font-size: 1.25em;
+    text-align: justify;
+}
+
+p.nyehe {
+    margin-right: 10%;
+}

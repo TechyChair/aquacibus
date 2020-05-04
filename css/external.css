@@ -4,6 +4,15 @@ body {
     transition: all 0.5s ease;
 }
 
+/* Sticky Stoof */
+div.stick {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 3;
+}
+
 /* For navbar + sidebar + logo */
 nav {
     width: 100%;
@@ -138,7 +147,7 @@ div.sblink:hover  {
 }
 /* Danni's Content */
 .slides {
-	padding-top: 830px;
+	padding-top: 90px;
 	padding-bottom: 60px;
 	position: absolute;
 	right: 265px;
@@ -211,6 +220,7 @@ div.sblink:hover  {
 .intropic {
 	width: 100%;
 	position: absolute;
+	top: 131px;
 	z-index: -4;	
 }
 
@@ -276,15 +286,15 @@ div.sblink:hover  {
 
 .articlepic {
 	width: 13%;
-	margin-top: 25px;
+	margin-top: 15px;
 	margin-left: 4.7%;
 	float: left;
 }
 
 .articlepic2 {
 	width: 13%;
-	margin-top: 25px;
-	margin-left: 15px;
+	margin-top: 30px;
+	margin-left: 34px;
 	display: inline;
 	float: left;
 }
@@ -303,7 +313,7 @@ div.sblink:hover  {
 	line-height: 1.5;
 	line-spacing: 0.8;
 	font-align: justify;
-	margin-left: 15px;
+	margin-left: 3px;
 	margin-top: 55px;
 	display: inline;
 	float: left;
@@ -333,7 +343,7 @@ div.sblink:hover  {
 .aboutbox {
 	background-color: #38AECC;
 	opacity: 0.7;
-	margin-top: 738.4px;
+	margin-top: 870px;
 	margin-right: 50px;
 	margin-left: 61%;
 	padding-top: 7%;
@@ -452,7 +462,7 @@ div.sblink:hover  {
 	text-align: center;
 	font-weight: bold;
 	font-size: 42px;
-	margin-top: 820px;
+	margin-top: 940px;
 }
 
 .norm {
@@ -681,7 +691,7 @@ div.sblink:hover  {
 }
 
 .charity {
-	margin-top: 660px;
+	margin-top: 790px;
 	margin-left: 340px;
 	font-weight: bold;
 	font-size: 56px;
