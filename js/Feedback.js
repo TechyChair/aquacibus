@@ -2,11 +2,13 @@
 window.sbappear=function() {
     document.getElementById("sidebar").style.display = "block";
     document.getElementsByTagName("body")[0].style.marginLeft = "15%";
-};
+    document.getElementsByClassName("stick")[0].style.width = "85%";
+}
 
 function sbclose() {
     document.getElementById("sidebar").style.display = "none";
     document.getElementsByTagName("body")[0].style.marginLeft = "0%";
+    document.getElementsByClassName("stick")[0].style.width = "100%";
 }   
 
 // Makes textinput appear when checkbox is clicked
@@ -76,6 +78,7 @@ function ValidateForm() {
     
 	var check = confirm('Are you sure you want to submit this form?');
 	    if (check==true) {
+                SaveForm();
 	            form.submit();
 	        }
         else {
@@ -93,5 +96,39 @@ function ResetForm () {
     }
     else {
         return false;
+    }
+}
+
+function SaveForm() {
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var minitial = document.getElementById("minitial").value;
+    var tarea = document.getElementById("tarea").value;
+    var smacc = document.getElementById("smacc").value;
+    var eemail = document.getElementById("eemail").value;
+    var number = document.getElementById("number").value;
+    
+    if (fname != "") {
+        localStorage.setItem("fname", fname);
+    }
+    
+    if (lname != "") {
+        localStorage.setItem("lname", lname);
+    }
+    
+    if (minitial != "") {
+        localStorage.setItem("minitial", minitial);
+    }
+    
+    if (smacc != "") {
+        localStorage.setItem("smacc", smacc);
+    }
+    
+    if (eemail != "") {
+        localStorage.setItem("eemail", eemail);
+    }
+    
+    if (number != "") {
+        localStorage.setItem("number", number);
     }
 }
