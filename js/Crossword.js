@@ -347,7 +347,7 @@ if (d4 == "true") {
 
 if (d5 == "true") {
     var c = 0;
-    var answer = "aqaucibus";
+    var answer = "aquacibus";
     var characs = answer.split("");
     for (i = 1; i<10; i++) {
         table.rows[i].cells[14].innerHTML = characs[c];
